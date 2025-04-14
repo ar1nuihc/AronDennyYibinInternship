@@ -10,7 +10,7 @@ from typing import KeysView
 from xmlrpc.client import Boolean
 
 from setuptools import SetuptoolsDeprecationWarning
-from wtforms import SelectField, SubmitField
+from wtforms import IntegerField, SelectField, SubmitField
 from app import app
 from flask import flash, redirect
 from flask_login import UserMixin, current_user
@@ -35,6 +35,7 @@ class User(UserMixin, Document):
     image = FileField()
     prononuns = StringField()
     role = StringField()
+    age = IntField() 
 
     meta = {
         'ordering': ['lname','fname']

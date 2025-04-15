@@ -1,0 +1,50 @@
+<!-- this is a form page for Internship. Copy/paste from this to make more! -->
+
+{% extends "base.html" %}
+
+{% block body %}
+    <h1>Internship Form</h1>
+
+    <!-- Display all form errors at the top -->
+    {% for field in form.errors %}
+        {% for error in form.errors[field] %}
+            <div class="alert alert-error">
+                <strong>Error!</strong> {{ field }}: {{ error }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+
+    <form method="post">
+        {{ form.hidden_tag() }}
+
+        <!-- Subject field -->
+        <p>
+            {{ form.subject.label }}<br>
+            {{ form.subject(size=64) }}
+            {% for error in form.subject.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+
+        <!-- Content field -->
+        <p>
+            {{ form.content.label }}<br>
+            {{ form.content(rows=5) }}
+            {% for error in form.content.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+
+        <!-- Tag field -->
+        <p>
+            {{ form.tag.label }}<br>
+            {{ form.tag(size=64) }}
+            {% for error in form.tag.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+
+        <!-- Submit button -->
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <h1>All Internships</h1>
+
+    {% if internships %}
+        <ul>
+            {% for internship in internships %}
+                <li>
+                    <strong>{{ internship.subject }}</strong><br>
+                    {{ internship.tag }}<br>
+                    <a href="{{ url_for('internship', internshipID=internship.id) }}">View Details</a>
+                </li>
+                <hr>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No internships found.</p>
+    {% endif %}
+{% endblock %}

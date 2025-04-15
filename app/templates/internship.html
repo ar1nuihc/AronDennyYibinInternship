@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <h1>{{ internship.subject }}</h1>
+
+    <p><strong>Tag:</strong> {{ internship.tag }}</p>
+    <p><strong>Posted by:</strong> {{ internship.author.name }}</p>
+    <p><strong>Created on:</strong> {{ internship.create_date }}</p>
+
+    <div>
+        <p>{{ internship.content }}</p>
+    </div>
+{% endblock %}

@@ -88,3 +88,5 @@ def internshipDelete(internshipID):
     internship.delete()
     flash("Internship deleted.")
     return redirect(url_for('internshipList'))  
+
+

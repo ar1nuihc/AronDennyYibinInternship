@@ -1,10 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i);
 
-@-ms-viewport {
-  width: device-width;
-}
 
-.tittle-for-page {
+.title{
   color:#E3DAC9;
  letter-spacing: 1.9px;
   margin-top: 40px;
@@ -12,7 +9,7 @@
   background-color: #6c584c;
 }
 
-acronym,
+/* acronym,
 address,
 applet,
 article,
@@ -41,13 +38,11 @@ figcaption,
 figure,
 footer,
 form,
-h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-header,
 hgroup,
 html,
 i,
@@ -91,11 +86,24 @@ ul,
 var,
 video {
   margin: 0;
+} */
+
+header {
+  text-align: center;
+  font-size: 120px;
+}
+
+#title {
+  text-align: center;
+}
+
+#carouselExample img{
+  margin: auto;
 }
 
 
 html {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   -ms-overflow-style: scrollbar;
   background: #000000;
 }
@@ -118,8 +126,9 @@ font-size: 32px;
   font-size:18px;
   
 }
+
 body {
-    background:#709f99;
+    background:#709f99 !important;
 }
 
 
@@ -165,8 +174,8 @@ body {
   background-position-x: initial;
   background-position-y: initial;
   background-size: initial;
-  background-repeat-x: initial;
-  background-repeat-y: initial;
+  /* background-repeat-x: initial;
+  background-repeat-y: initial; */
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
@@ -209,7 +218,7 @@ body {
 }
 
 .text-blk.heading {
-  font-size: 40px;
+  font-size: 120px !important;
   line-height: 64px;
   font-weight: 900;
   color: #FFF8E7;
@@ -225,8 +234,8 @@ body {
   background-position-x: initial;
   background-position-y: initial;
   background-size: initial;
-  background-repeat-x: initial;
-  background-repeat-y: initial;
+  /* background-repeat-x: initial;
+  background-repeat-y: initial; */
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
@@ -423,7 +432,7 @@ a {
 }
 
 .text-blk.headingText {
-  font-size: 22px;
+  font-size: 60px;
   font-weight: 700;
   line-height: 30px;
 
@@ -526,8 +535,8 @@ a {
   background-position-x: initial;
   background-position-y: initial;
   background-size: initial;
-  background-repeat-x: initial;
-  background-repeat-y: initial;
+  /* background-repeat-x: initial;
+  background-repeat-y: initial; */
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;

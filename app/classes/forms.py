@@ -24,6 +24,13 @@ class BlogForm(FlaskForm):
     tag = StringField('Tag', validators=[DataRequired()])
     submit = SubmitField('Blog')
 
+class InternshipForm(FlaskForm):
+    subject = StringField('Subject', validators=[DataRequired()])
+    content = TextAreaField('Content', validators=[DataRequired()])
+    tag = StringField('Tag', validators=[DataRequired()])
+    submit = SubmitField('Submit')
+
+
 class CommentForm(FlaskForm):
     content = TextAreaField('Comment', validators=[DataRequired()])
     submit = SubmitField('Comment')
